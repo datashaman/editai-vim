@@ -2,6 +2,11 @@
 
 Simple plugin to use the Edit API in OpenAI Codex.
 
+## requirements
+
+* vim with python3 enabled
+* API Key from OpenAI
+
 ## installation
 
 Install `datashaman/editai-vim` with _Vim-Plug_, _Vundle_, etc.
