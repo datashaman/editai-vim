@@ -2,7 +2,9 @@ if exists("g:loaded_editai_vim")
     finish
 endif
 
+let g:editai_max_tokens = 400
 let g:editai_temperature = 0.2
+let g:editai_top_p = 0.1
 
 py3 import sys
 py3 import vim
