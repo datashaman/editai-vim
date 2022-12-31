@@ -3,6 +3,7 @@ if exists("g:loaded_editai_vim")
 endif
 
 let g:editai_temperature = 0.2
+let g:editai_model = 'code-davinci-edit-001'
 
 py3 import sys
 py3 import vim

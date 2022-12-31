@@ -11,10 +11,9 @@ def edit(instruction):
     data = {
         'input': "\n".join(vim.current.buffer),
         'instruction': instruction,
-        'model': 'code-davinci-edit-001',
+        'model': vim.eval("g:editai_model"),
         'n': 1,
         'temperature': float(vim.eval("g:editai_temperature")),
-        # 'top_p': float(vim.eval("g:editai_top_p")),
     }
 
     req = Request(
@@ -28,9 +27,7 @@ def edit(instruction):
 
     try:
         with urlopen(req) as res:
-            encoded = res.read().decode('utf8')
-            response = json.loads(encoded)
-
+            response = json.loads(res.read().decode('utf8'))
             vim.current.buffer[:] = response['choices'][0]['text'].strip().split("\n")
     except HTTPError as e:
         print(e.read().decode('utf8'))
