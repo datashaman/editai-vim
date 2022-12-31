@@ -35,5 +35,6 @@ The command is used as follows:
 You can set the following variable to affect future requests:
 
 ```
+:let g:editai_model = 'code-davinci-edit-001' or 'text-davinci-edit-001'. Default to code.
 :let g:editai_temperature = 0.2
 ```
