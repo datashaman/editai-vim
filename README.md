@@ -31,3 +31,9 @@ The command is used as follows:
 ```
 
 `,ea` has been mapped to call the command.
+
+You can set the following variable to affect future requests:
+
+```
+:let g:editai_temperature = 0.2
+```
