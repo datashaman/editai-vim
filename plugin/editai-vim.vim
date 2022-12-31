@@ -2,6 +2,8 @@ if exists("g:loaded_editai_vim")
     finish
 endif
 
+let g:editai_temperature = 0.2
+
 py3 import sys
 py3 import vim
 py3 sys.path.append(vim.eval('expand("<sfile>:h")'))

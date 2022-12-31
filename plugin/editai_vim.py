@@ -12,7 +12,7 @@ def edit(instruction):
         'instruction': instruction,
         'model': 'code-davinci-edit-001',
         'n': 1,
-        'temperature': 0.5,
+        'temperature': float(vim.eval("g:editai_temperature")),
     }
 
     req = Request(
