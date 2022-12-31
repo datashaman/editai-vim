@@ -6,6 +6,11 @@ Simple plugin to use the Edit API in OpenAI Codex.
 
 Install `datashaman/editai-vim` with _Vim-Plug_, _Vundle_, etc.
 
+Set the OpenAI API Key in your environment and export it:
+```
+export OPENAI_API_KEY=yourkeyhere
+```
+
 ## usage
 
 The plugin calls the OpenAI edit API with the current buffer contents as input.
